@@ -1,0 +1,11 @@
+<h1>Blog Articles</h1>
+
+<ul>
+  <% @blog_articles.each do |blog_article| %>
+    <li>
+      <a href="/articles/<%= blog_article.id %>">
+        <%= blog_article.title %>
+      </a>
+    </li>
+  <% end %>
+</ul>
